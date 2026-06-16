@@ -95,7 +95,7 @@ def buscar_mascota():
                 print(f"Edad: {m["edad"]}")
                 print(f"Peso: {m["peso"]}Kg")
                 print(f"Estado: {verificar_estado(m)}")
-            if encontrado == False:
+        if encontrado == False:
                 print("La mascota buscada no esta ingresada.")
 
 def eliminar_mascota():
@@ -131,6 +131,7 @@ def actualizar_estados():
             if verificado == False:
                 m["estado"] = False
                 actualizados += 1
+        print(f"{actualizados} Estados Actualizados")
 
 
 def mostrar_mascotas():
